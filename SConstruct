@@ -27,7 +27,7 @@ opts = Variables('build.py', ARGUMENTS)
 def read_version(prefix, path):
   version_re = re.compile("(.*)%s_(?P<id>MAJOR|MINOR|PATCH)_VERSION(\s+)(?P<num>\d)(.*)" % prefix)
   versions = {}
-  fp = open(path, 'rb')
+  fp = open(path, 'r')
   for line in fp.readlines():
     m = version_re.match(line)
     if m:
