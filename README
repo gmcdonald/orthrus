@@ -7,6 +7,10 @@ Orthrus uses scons to build.  For most people, just run:
    # scons install
 And Orthrus will be installed into /usr/local.
 
+Ensure using Python 2 currently, so you might need to
+    # python /usr/bin scons
+    # python /usr/bin scons install
+
 To change where things are installed, or what APR is used, create a build.py,
 with something like this:
 
